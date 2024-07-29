@@ -1,3 +1,9 @@
+# Geometry Dash OS Archinstall
+
+This was forked from the [Archinstall repository](https://github.com/archlinux/archinstall) on Github. <br>
+This project modifies archinstall to be the installer for [Geometry Dash OS](https://github.com/Geometry-Dash-OS/Geometry-Dash-OS)
+
+
 <!-- <div align="center"> -->
 <img src="https://github.com/archlinux/archinstall/raw/master/docs/logo.png" alt="drawing" width="200"/>
 

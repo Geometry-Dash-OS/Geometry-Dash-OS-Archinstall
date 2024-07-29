@@ -1,14 +1,9 @@
-# Maintainer: David Runge <dvzrv@archlinux.org>
-# Maintainer: Giancarlo Razzolini <grazzolini@archlinux.org>
-# Contributor: Anton Hvornum <anton@hvornum.se>
-# Contributor: demostanis worlds <demostanis@protonmail.com>
-
-pkgname=archinstall
+pkgname=gd-archinstall
 pkgver=2.6.0
 pkgrel=1
 pkgdesc="Just another guided/automated Arch Linux installer with a twist"
 arch=(any)
-url="https://github.com/archlinux/archinstall"
+url="https://github.com/Geometry-Dash-OS/Geometry-Dash-OS-Archinstall"
 license=(GPL3)
 depends=(
   'arch-install-scripts'
@@ -37,18 +32,13 @@ makedepends=(
 optdepends=(
   'python-systemd: Adds journald logging'
 )
-provides=(python-archinstall archinstall)
+provides=(python-archinstall gd-archinstall)
 conflicts=(python-archinstall archinstall-git)
 replaces=(python-archinstall archinstall-git)
 source=(
   $pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz
   $pkgname-$pkgver.tar.gz.sig::$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz.sig
 )
-sha512sums=('64cb3593c5091b3885ad14ef073cfab31090b4f9bcb4405b18cf9b19adb5ca42255ba8891ec62e21f92d59872541ef6d94f186fb05c625822af63525441e08d9'
-            'SKIP')
-b2sums=('9c0ec0871841804377ba8310dc744711adcec4eed7319a8d89d684af8e7b822bb9d47540b00f4d746a9fcd7b9ea1b9e07bac773e6c28fabc760e4df38b16748b'
-        'SKIP')
-validpgpkeys=('256F73CEEFC6705C6BBAB20E5FBBB32941E3740A') # Anton Hvornum (Torxed) <anton@hvornum.se>
 
 pkgver() {
   cd $pkgname-$pkgver
