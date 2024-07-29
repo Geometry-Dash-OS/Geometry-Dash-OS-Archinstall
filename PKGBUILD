@@ -1,5 +1,5 @@
 pkgname=gd-archinstall
-pkgver=2.6.0
+pkgver=1.0.0
 pkgrel=1
 pkgdesc="Just another guided/automated Arch Linux installer with a twist"
 arch=(any)
