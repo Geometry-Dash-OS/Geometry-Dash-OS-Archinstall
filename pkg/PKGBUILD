@@ -1,0 +1,33 @@
+pkgname=gd-archinstall
+pkgver=1.2.0
+pkgrel=1
+pkgdesc="Geometry Dash OS Archinstall"
+arch=('x86_64')
+license=(GPL3)
+depends=(
+  'arch-install-scripts'
+  'btrfs-progs'
+  'coreutils'
+  'cryptsetup'
+  'dosfstools'
+  'e2fsprogs'
+  'glibc'
+  'kbd'
+  'pciutils'
+  'procps-ng'
+  'python'
+  'python-pyparted'
+  'python-simple-term-menu'
+  'systemd'
+  'util-linux'
+)
+makedepends=(
+  'python-setuptools'
+  'python-sphinx'
+  'python-build'
+  'python-installer'
+  'python-wheel'
+)
+package() {
+    cp -r $srcdir/usr/ $pkgdir/
+}
