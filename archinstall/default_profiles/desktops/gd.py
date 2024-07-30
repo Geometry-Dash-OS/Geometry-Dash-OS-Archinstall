@@ -1,13 +1,13 @@
 from typing import List, Optional, Any, TYPE_CHECKING
 
 from archinstall.default_profiles.profile import ProfileType, GreeterType
-from archinstall.default_profiles.gd import GDProfile
+from archinstall.default_profiles.xorg import XorgProfile
 
 if TYPE_CHECKING:
 	_: Any
 
 
-class GDProfile(GDProfile):
+class GDProfile(XorgProfile):
 	def __init__(self):
 		super().__init__('GD', ProfileType.DesktopEnv, description='')
 
